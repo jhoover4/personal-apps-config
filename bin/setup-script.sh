@@ -6,6 +6,8 @@
 # Setup nginx
 sudo apt update
 sudo apt install nginx
-
-# Setup firewall
 sudo ufw allow 'Nginx HTTP'
+
+# Link server blocks
+ln -s ../sites-available/mineral-catalog /etc/nginx/sites-enabled
+ln -s ../sites-available/pug-or-ugh /etc/nginx/sites-enabled
