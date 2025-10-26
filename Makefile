@@ -1,4 +1,4 @@
-# TODO: If podman is not installed, install it
+# TODO: If docker is not installed, install it
 # For running backend apps
 run-apps:
-	podman compose ./docker-compose.yaml
+	docker compose up
