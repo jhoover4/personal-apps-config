@@ -1,8 +1,4 @@
-setup-ubuntu:
-	./setup-script.sh
-
-start-nginx:
-	sudo systemctl start nginx
-
-mineral-catalog-gunicorn-logs:
-	tail -f /var/log/gunicorn/dev.log
+# TODO: If podman is not installed, install it
+# For running backend apps
+run-apps:
+	podman compose ./docker-compose.yaml
